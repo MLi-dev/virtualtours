@@ -1,0 +1,74 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.container {
+  height: 800px;
+  width: 1300px;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s var(--transition-duration), opacity var(--transition-duration) linear;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity var(--transition-duration) linear;
+}
+
+#text {
+  background-color: #222222;
+  padding: 10px;
+  color: #f5f4f3;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  border: 2px solid;
+  border-color: red;
+  font-size: 30px;
+  transform: translateX(-50%);
+}
